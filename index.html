@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order your food</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        nav{
+            position: fixed;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: white;
+            z-index: 3;
+            border-bottom: 0.5px solid black ;
+            box-shadow: 0 0 10px 0 black;
+        }
+        .container{
+            padding: 10px;
+            
+        }
+        
+        a:link{
+            text-decoration: none;
+        }
+        a{
+            color: black;
+    
+            padding: 12px 30px;
+        }
+        .flex{
+            display: flex;
+        }
+        .nav-container{
+            justify-content: space-between;
+            align-items: center;
+        
+            background-color: white;
+        
+        
+            
+            
+        }
+        .nav-content{
+            text-align: center;
+            gap: 50px;
+
+        }
+        .nav-login{
+           
+            
+        }
+        .nav-logo > img {
+            width: 100px;
+
+        }
+        .login{
+            
+            background-color: forestgreen;
+            border-radius: 5px;
+            
+
+        }
+        @media screen and (max-width:780px) {
+            .section-1-container {
+                display: flex;
+                flex-direction: column !important;
+                gap: 15px;
+            }
+            .food-img{
+                padding-top: 20px;
+            max-width: 50%;
+            height: auto;
+         }
+         .yellow-img{
+            max-width: 50%;
+            height: auto;
+            
+         }
+            
+            
+        }
+        @media screen and (max-width: 600px){
+            .flex{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .nav-container{
+                padding-bottom: 12px;
+            }
+            .nav-content{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .section-1-container{
+                position: absolute;
+                top: 220px;
+                left: 0;
+                right: 0;
+            }
+            
+        }
+
+         /* section-1 */
+         
+         section{
+            position:absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+         }
+         .section-1-container{
+            gap: 2px;
+            flex-direction: row;
+         }
+         .section-1-content{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+         }
+         .read-me{
+          
+          background-color: black;
+          color: white;
+         }
+         .food-img{
+            width: 100%;
+            height: auto;
+         }
+         .yellow-img{
+            width: 100%;
+            height: auto;
+            
+         }
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-container flex">
+                <div class="nav-logo">
+                    <img class="pw-logo" src="PWSkills-main.png" alt="">
+                </div>
+                <div class="flex nav-content">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contant</a>
+                </div>
+                <div class="nav-login">
+                    <a class="login" href="#">Login</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <section>
+        <div class="container">
+            
+                <div class="section-1-container flex">
+                    <div class="section-1-content ">
+                        <div>
+
+                            <h1 class="section-1-heading">Healthy Food</h1>
+                        </div>
+                        <p class="section-1-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officia repellendus sequi ea molestiae corporis quas dolores. Reprehenderit fugiat, esse nesciunt alias nihil tempora expedita. Dolores, dolore perspiciatis? Voluptas harum quos aliquid veniam enim eum nemo dolor rerum, facere quo ratione unde fugit cumque illo labore? Quos, dolorem! Laudantium odit culpa aut temporibus. Molestiae reiciendis non sed, est quas fugiat voluptates, dolore accusantium nihil ducimus nostrum saepe possimus aperiam sit minima recusandae? Iure deleniti tempora adipisci ipsam ad cum eos ullam, quis numquam. Quidem, natus facere dolor commodi tenetur accusamus?
+
+                        </p>
+                        <div>
+
+                            <a class="read-me" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="section-1-img">
+                        <img class="food-img" src="food.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="yellow.jpeg" alt="" class="yellow-img">
+                    </div>
+                    
+                </div>
+        
+
+        </div>
+    </section>
+   
+    
+</body>
+</html>
